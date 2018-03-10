@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LayUiTitle</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./lib/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header header header-doc" spring="">
+        <div class="layui-main">
+            <a class="logo" style="color: #fff" href="/">
+                LOGO
+            </a>
+
+            <ul class="layui-nav">
+                <li class="layui-nav-item"><a href="">最新活动</a></li>
+                <li class="layui-nav-item layui-this"><a href="">产品</a></li>
+                <li class="layui-nav-item"><a href="">大数据</a></li>
+                <li class="layui-nav-item">
+                    <a>解决方案</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">移动模块</a></dd>
+                        <dd><a href="">后台模版</a></dd>
+                        <dd><a href="">电商平台</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">社区</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">默认展开</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">选项1</a></dd>
+                        <dd><a href="javascript:;">选项2</a></dd>
+                        <dd><a href="">跳转</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">解决方案</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">移动模块</a></dd>
+                        <dd><a href="">后台模版</a></dd>
+                        <dd><a href="">电商平台</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">产品</a></li>
+                <li class="layui-nav-item"><a href="">大数据</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-body"></div>
+    <div class="layui-footer footer footer-demo">
+        <div class="layui-main">
+            <p>© 2018 <a href="/">layui.com</a> MIT license</p>
+            <p>
+                <a href="http://fly.layui.com/case/2018/" target="_blank">案例</a>
+                <a href="http://fly.layui.com/jie/3147/" target="_blank">众筹</a>
+                <a href="mailto:xianxin@layui-inc.com">联系</a>
+                <a href="https://github.com/sentsin/layui/" target="_blank" rel="nofollow">GitHub</a>
+                <a href="https://gitee.com/sentsin/layui" target="_blank" rel="nofollow">码云</a>
+                <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
+            </p>
+            <p class="site-union">
+                <span>提供 CDN 赞助</span>
+            </p>
+        </div>
+    </div>
+    <div class="site-tree-mobile layui-hide">
+        <i class="layui-icon"></i>
+    </div>
+    <div class="site-mobile-shade"></div>
+</div>
+
+<script src="lib/layui/layui.js"></script>
+<script>
+    //一般直接写在一个js文件中
+    layui.config({
+        // dir:'../lib/layui/',
+        base: 'modules/' //你存放新模块的目录，注意，不是layui的模块目录
+    }).use('layMain'); //加载入口
+    layui.use('element', function () {
+        // var element = layui.element;
+        //     // 一些事件监听
+        //     // element.on('tab(demo)', function(data){
+        //     //     console.log(data);
+        //     // });
+    });
+</script>
+</body>
+</html>

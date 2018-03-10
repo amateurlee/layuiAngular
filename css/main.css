@@ -1,0 +1,47 @@
+.logo {
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+.layui-main .topNav {
+    position: absolute;
+    right: 0;
+}
+
+
+/* 头部 */
+.header{height: 59px; border-bottom: 1px solid #404553;  background-color: #393D49;}
+.logo{position: absolute; left: 0; top: 16px;}
+.logo img{width: 82px; height: 31px;}
+
+.header .layui-nav{position: absolute; right: 0; top: 0; padding: 0; background: none;}
+.header .layui-nav .layui-nav-item{margin: 0 20px; }
+.header .layui-nav .layui-nav-item[mobile]{display: none;}
+
+.header .layui-container .logo{left: 15px;}
+.header .layui-container .layui-nav{right: 15px;}
+
+
+
+.menu{position: absolute; right: 0; top: 0; line-height: 65px;}
+.menu a{display:inline-block; *display:inline; *zoom:1; vertical-align:top;}
+.menu a{position: relative; padding: 0 20px; margin: 0 20px; color: #c2c2c2; font-size: 14px;}
+.menu a:hover{color: #fff; transition: all .5s; -webkit-transition: all .5s}
+.menu a.this{color: #fff}
+.menu a.this::after{content: ''; position: absolute; left: 0; bottom: -1px; width: 100%; height: 5px; background-color: #5FB878;}
+
+
+/* 底部 */
+.footer{padding: 30px 0; line-height: 30px; text-align: center; color: #666; font-weight: 300;}
+body .layui-layout-admin .footer-demo{height: 50px; padding: 5px 0;}
+.footer a{padding: 0 5px;}
+.site-union{margin-top: 10px; color: #999;}
+.site-union>*{display: inline-block; vertical-align: middle;}
+.site-union a[upyun] img{width: 80px;}
+.site-union span{position: relative; top: 3px;}
+.site-union span a{padding: 0; display: inline; color: #999;}
+.site-union span a:hover{text-decoration: underline;}
+
+.footer-demo p{display: inline-block; vertical-align: middle; height: 50px; padding-right: 10px;}
+.footer-demo .site-union{position: relative; top: -9px;}
