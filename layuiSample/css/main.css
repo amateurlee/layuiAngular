@@ -2,6 +2,7 @@
     position: absolute;
     left: 0;
     color: #fff;
+    display: block;
 }
 
 .layui-main .topNav {
